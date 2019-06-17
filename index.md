@@ -29,18 +29,20 @@ db.run((Transaction tr) -> {
 });
 ```
 
-# Advantage of prefix
+# Advantage of subspace
 
 When writing records, there may be a scenario when you need to read ALL the keys.
 
-Always writing a record with a pre-defined prefix helps reading all the records, with a readRange operation.
+Always writing a record with a pre-defined subspace helps reading all the records, with a readRange operation.
 
 ```
+Subspace subspace = new Subspace(Tuple.from("tsdb"));
+
 // assuming variables are initialized elsewhere
 db.run((Transaction tr) -> {
-  byte[] key = Tuple.from("dailyPageCount", yyyy, mm, dd, pageId).pack();
+  Tuple tuple = Tuple.from(yyyy, mm, dd, hour, minute);
   byte[] value = Tuple.from(count).pack();
-  tr.set(key, value);
+  tr.set(subspace.pack(tuple), value);
   return null;
 });
 ```
