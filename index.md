@@ -79,3 +79,5 @@ db.run((Transaction tr) -> {
 });
 
 ```
+
+# Increment value
