@@ -2,8 +2,10 @@
 
 ## Table of Contents  
 [Foundation DB cheatsheet](#foundation-db-cheatsheet)
+
 [Dropwizard](#dropwizard-quickstart)
 
+___
 
 ### Foundation DB Basic Operations
 
@@ -78,6 +80,8 @@ db.run((Transaction tr) -> {
 });
 
 ```
+
+___
 
 ### Dropwizard Quickstart
 
