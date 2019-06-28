@@ -1,11 +1,11 @@
 
 # Welcome
 
-I have been involved with building software applications, services, data pipelines, websites for more than a decade.
+I have been involved with building software applications, services, data pipelines and websites for more than a decade.
 
 On introspection, it was clear that I need to learn something new, probably every few months.
 
-I wanted to create this simple website, which servces as a cheat sheet, with a concise description and a simple example (wherever possible) of anything new that I learn.
+I wanted to create this simple website, which serves as a cheat sheet, with a concise description and a simple example (wherever possible) of anything new that I learn.
 
 ## Table of Contents  
 [Foundation DB cheatsheet](#foundation-db-cheatsheet)
@@ -87,6 +87,10 @@ db.run((Transaction tr) -> {
 });
 
 ```
+
+# References
+- Foundation DB docs : https://apple.github.io/foundationdb/
+- Foundation DB record layer : https://github.com/FoundationDB/fdb-record-layer
 
 ___
 
