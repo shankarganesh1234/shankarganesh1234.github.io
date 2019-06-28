@@ -1,12 +1,9 @@
 
 
+## Table of Contents  
+[Foundation DB cheatsheet](#foundation-db-cheatsheet)  
 
-
-
-
-## Welcome to GitHub Pages
-
-### Cheatsheet
+### Foundation DB cheatsheet
 
 # How key/value is stored
 
