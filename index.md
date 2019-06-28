@@ -14,9 +14,9 @@ I wanted to create this simple website, which serves as a cheat sheet, with a co
 
 ___
 
-### Foundation DB Basic Operations
+# Foundation DB Basic Operations
 
-# How key/value is stored
+## How key/value is stored
 
 The key can be created from a tuple. 
 
@@ -37,7 +37,7 @@ db.run((Transaction tr) -> {
 });
 ```
 
-# Advantage of subspace
+## Advantage of subspace
 
 When writing records, there may be a scenario when you need to read ALL the keys.
 
@@ -55,7 +55,7 @@ db.run((Transaction tr) -> {
 });
 ```
 
-# Read a value
+## Read a value
 
 To read a particular value, you need to know the complete key.
 The result is a Tuple. To get a particular field in the tuple, you need to know the index within the tuple.
@@ -70,7 +70,7 @@ db.run((Transaction tr) -> {
 
 ```
 
-# Read range
+## Read range
 
 To read ALL records, you can use the prefix.
 To read range, you can use upto a certain precision.
@@ -88,13 +88,13 @@ db.run((Transaction tr) -> {
 
 ```
 
-# References
+## References
 - Foundation DB docs : https://apple.github.io/foundationdb/
 - Foundation DB record layer : https://github.com/FoundationDB/fdb-record-layer
 
 ___
 
-### Dropwizard Quickstart
+# Dropwizard Quickstart
 
 Dropwizard pulls together stable, mature libraries from the Java ecosystem into a simple, light-weight package that lets you focus on getting things done.
 
