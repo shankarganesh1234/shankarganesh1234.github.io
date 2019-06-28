@@ -1,9 +1,11 @@
 
 
 ## Table of Contents  
-[Foundation DB cheatsheet](#foundation-db-cheatsheet)  
+[Foundation DB cheatsheet](#foundation-db-cheatsheet)
+[Dropwizard](#dropwizard-quickstart)
 
-### Foundation DB cheatsheet
+
+### Foundation DB Basic Operations
 
 # How key/value is stored
 
@@ -77,4 +79,23 @@ db.run((Transaction tr) -> {
 
 ```
 
-# Increment value
+### Dropwizard Quickstart
+
+Dropwizard pulls together stable, mature libraries from the Java ecosystem into a simple, light-weight package that lets you focus on getting things done.
+
+Dropwizard has out-of-the-box support for sophisticated configuration, application metrics, logging, operational tools, and much more, allowing you and your team to ship a production-quality web service in the shortest time possible.
+
+For a basic application, there are 5 main components -
+
+- The Application class : The entry point for the application and responsible for bootstrapping configuration, resource and health checks
+- The Configuration class : Dynamic inputs like environment variables can be defined here
+- The Resource class : The RESTful services
+- The Health Check : Checks whether the inputs to the application through the config, and behaving correctly
+- Model classes : POJOs representing the models/entities
+
+In this example, I will create a basic application which will expose a REST endpoint.
+I will be using gradle for dependency management and packaging.
+
+
+
+
