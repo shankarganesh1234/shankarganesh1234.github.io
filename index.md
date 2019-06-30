@@ -145,7 +145,7 @@ public class SampleApp extends Application<SampleConfig> {
 }
 ```
 
-The entire sample application is present at : https://github.com/shankarganesh1234/dropwizard-gradle-sample
+The entire sample application is present at : [https://github.com/shankarganesh1234/dropwizard-gradle-sample](https://github.com/shankarganesh1234/dropwizard-gradle-sample)
 
 ___
 
