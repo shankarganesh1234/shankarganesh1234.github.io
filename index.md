@@ -111,6 +111,41 @@ For a basic application, there are 5 main components -
 In this example, I will create a basic application which will expose a REST endpoint.
 I will be using gradle for dependency management and packaging.
 
+The application can be run by using the gradle task 'run'
 
+```
+public class SampleApp extends Application<SampleConfig> {
+
+    private static String APP_NAME = "sample-app-name";
+
+    public static void main(String[] args) throws Exception {
+        new SampleApp().run(args);
+    }
+
+    @Override
+    public String getName() {
+        return APP_NAME;
+    }
+
+    @Override
+    public void initialize(Bootstrap<SampleConfig> bootstrap) {
+        super.initialize(bootstrap);
+    }
+
+    @Override
+    public void run(SampleConfig configuration, Environment environment) throws Exception {
+        final SampleResource resource = new SampleResource(
+                configuration.getVersion());
+
+        final SampleHealthCheck healthCheck =
+                new SampleHealthCheck(configuration.getVersion());
+        environment.healthChecks().register("healthCheck", healthCheck);
+        environment.jersey().register(resource);
+    }
+}
+```
+
+The entire sample application is present at : https://github.com/shankarganesh1234/dropwizard-gradle-sample
+___
 
 
