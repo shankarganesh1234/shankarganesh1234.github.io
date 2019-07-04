@@ -10,7 +10,7 @@ I wanted to create this simple website, which serves as a cheat sheet, with a co
 ## Table of Contents  
 [Foundation DB cheatsheet](#foundation-db-cheatsheet)
 
-[Dropwizard](#dropwizard-quickstart)
+[Dropwizard with gradle](#dropwizard-quickstart)
 
 ___
 
@@ -109,7 +109,7 @@ For a basic application, there are 5 main components -
 - Model classes : POJOs representing the models/entities
 
 In this example, I will create a basic application which will expose a REST endpoint.
-I will be using gradle for dependency management and packaging.
+I will be using __gradle__ for dependency management and packaging.
 
 The application can be run by using the gradle task 'run'
 
